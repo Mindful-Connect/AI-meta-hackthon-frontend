@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Happly Chrome Extension",
+  "version": "1.0.0",
+  "description": "Happly Chrome extension",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Click to open Happly panel"
+  },
+  "side_panel": {
+    "default_path": "index.html",
+    "default_icon": "icon-128x128.png",
+    "default_panel": "index.html",
+    "open_at_install": true,
+    "sidebar": "index.html",
+    "area": "sidebar",
+    "width": 550,
+    "show_header": true,
+    "header": "Happly",
+    "id": "happly-panel"
+  },
+  "permissions": [
+    "storage",
+    "sidePanel",
+    "tabs",
+    "scripting",
+    "activeTab",
+    "declarativeNetRequest",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon-16x16.png",
+    "32": "icon-32x32.png",
+    "64": "icon-64x64.png",
+    "128": "icon-128x128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

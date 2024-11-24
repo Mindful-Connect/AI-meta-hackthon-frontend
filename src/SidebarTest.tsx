@@ -1,4 +1,4 @@
-import Sidebar from "@/components/Sidebar.tsx"
+import Sidebar from "@/components/Sidebar.tsx";
 
 export default function SidebarTest() {
   return (
@@ -11,5 +11,5 @@ export default function SidebarTest() {
         <Sidebar page={"home" as const} />
       </div>
     </div>
-  )
+  );
 }

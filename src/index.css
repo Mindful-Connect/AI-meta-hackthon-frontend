@@ -36,6 +36,10 @@ body {
   background-color: #faece6;
 }
 
+.card-box-shadow {
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.07);
+}
+
 .signUpTextField:-webkit-autofill,
 .signUpTextField:-webkit-autofill:hover,
 .signUpTextField:-webkit-autofill:focus,
@@ -43,10 +47,9 @@ body {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
-.signUpTextField{
+.signUpTextField {
   background-color: transparent !important;
 }
-
 
 .styled-gradient-text {
   background: linear-gradient(
@@ -55,6 +58,19 @@ body {
     #e30147 17.34%,
     #6422c8 39.38%,
     #2aceb6 56.44%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.styled-gradient-text-input {
+  background: linear-gradient(
+    92deg,
+    #fbd570 14.9%,
+    #e30147 36.52%,
+    #6422c8 54.79%,
+    #2aceb6 75.88%
   );
   background-clip: text;
   -webkit-background-clip: text;

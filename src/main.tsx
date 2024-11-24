@@ -1,7 +1,7 @@
-import { StrictMode } from "react"
-import { createRoot } from "react-dom/client"
-import "./index.css"
-import { Router } from "react-chrome-extension-router"
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { Router } from "react-chrome-extension-router";
 import Login from "@/components/Login.tsx";
 
 createRoot(document.getElementById("root")!).render(
@@ -9,5 +9,5 @@ createRoot(document.getElementById("root")!).render(
     <Router>
       <Login />
     </Router>
-  </StrictMode>
-)
+  </StrictMode>,
+);
